@@ -7,6 +7,10 @@
    font-family: "Poppins", sans-serif;
 }
 
+body {
+   background: #f2f2f2;
+}
+
 .header-dash {
    position: fixed;
    top: 0;
@@ -118,4 +122,47 @@
    color: #fff;
    background: rgba(255, 255, 255, 0.3);
    cursor: pointer;
+}
+
+/*Services*/
+section {
+   padding-top: 80px;
+
+}
+
+.section-title {
+   text-align: center;
+}
+
+section h2 {
+   font-size: 2rem;
+}
+
+section .cards {
+   margin-top: 50px;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+section .card {
+   width: calc(100% / 3 - 30px);
+   text-align: center;
+   list-style: none;
+   background-color: #fff;
+   padding: 40px 15px;
+   border-radius: 5px;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.04);
+   margin-bottom: 40px;
+}
+
+section .card img {
+   height: 120px;
+   width: 120px;
+   border-radius: 50%;
+   margin-bottom: 20px;
+   object-fit: cover;
+}
+
+section .card p {
+   margin-top: 5px;
 }
