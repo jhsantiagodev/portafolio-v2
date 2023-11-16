@@ -13,6 +13,7 @@
    left: 0;
    width: 100%;
    background: #191919;
+   z-index: 100;
 }
 
 .flex {
@@ -62,4 +63,59 @@
    color: #f03030;
 }
 
+.home-page {
+   position: relative;
+   height: 100vh;
+   width: 100%;
+   background: url("img/tema.jpg");
+   background-position: center;
+   background-size: cover;
+}
 
+/*Efecto imagen detras*/
+.home-page::before {
+   content: "";
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   top: 0;
+   left: 0;
+   background: rgba(0, 0, 0, 0.2);
+}
+
+.home-page .content {
+   position: relative; /*sobrepone el texto al de la imagen*/
+   height: 85%;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.home-page .text {
+   color: #fff;
+   text-align: center;
+   margin-bottom: 50px;
+}
+
+.home-page .text h1 {
+   font-size: 60px;
+   font-weight: 600;
+   margin-bottom: 10px;
+}
+
+.home-page a {
+   color: #333;
+   text-decoration: none;
+   background: #fff;
+   padding: 10px 30px;
+   border-radius: 5px;
+   border: 2px solid #fff;
+   box-shadow: rgba(0, 0, 0, 0.3);
+   font-size: 18px;
+   transition: all 0.3s ease;
+}
+
+.home-page a:hover{
+   color: #fff;
+   background: rgba(255, 255, 255, 0.3);
+   cursor: pointer;
+}
