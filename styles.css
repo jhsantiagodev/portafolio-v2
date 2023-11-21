@@ -153,6 +153,7 @@ section .card {
    border-radius: 5px;
    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.04);
    margin-bottom: 40px;
+   cursor: pointer;
 }
 
 section .card img {
@@ -165,4 +166,14 @@ section .card img {
 
 section .card p {
    margin-top: 5px;
+}
+
+.proyects .card {
+   padding: 0 0 20px;
+}
+
+.proyects .card img {
+   height: 240px;
+   width: 100%;
+   border-radius: 8px 8px 0 0;
 }
